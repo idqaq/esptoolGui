@@ -1,4 +1,6 @@
 
-cmake-build-debug/untitled1.cbp
-cmake-build-debug/Testing/Temporary/LastTest.log
-cmake-build-debug/MCUtool.cbp
+cmake-build-debug/*
+
+.idea/*
+
+*.iml
