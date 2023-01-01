@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(untitled1)
+project(MCUtool)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_AUTOMOC ON)
@@ -14,8 +14,8 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(untitled1 main.cpp layout.cpp layout.h layout.ui)
-target_link_libraries(untitled1
+add_executable(esptoolGui main.cpp layout.cpp layout.h layout.ui)
+target_link_libraries(esptoolGui
         Qt5::Core
         Qt5::Gui
         Qt5::SerialPort

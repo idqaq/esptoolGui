@@ -120,7 +120,6 @@ void layout::flashOne() {
     << "write_flash"
     << "--erase-all"
     << "0x00000" << ui->oneBin->text();
-    ;
     qInfo()<<args;
     cmdProcess("esptool.py",args);
 }
