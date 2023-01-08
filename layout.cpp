@@ -18,7 +18,7 @@
 layout::layout(QWidget *parent) :
         QWidget(parent), ui(new Ui::layout) {
     ui->setupUi(this);
-    // 添加 baud 项目
+    // 添加 baudbox 项目
     ui->baudBox->clear();
     ui->baudBox->addItem(QStringLiteral("1200"), QSerialPort::Baud1200);
     ui->baudBox->addItem(QStringLiteral("2400"), QSerialPort::Baud2400);
