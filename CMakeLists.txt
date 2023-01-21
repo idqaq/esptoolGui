@@ -7,7 +7,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 
-find_package(Qt5 COMPONENTS
+find_package(Qt6 COMPONENTS
         Core
         Gui
         SerialPort
@@ -16,8 +16,8 @@ find_package(Qt5 COMPONENTS
 
 add_executable(esptoolGui main.cpp layout.cpp layout.h layout.ui)
 target_link_libraries(esptoolGui
-        Qt5::Core
-        Qt5::Gui
-        Qt5::SerialPort
-        Qt5::Widgets
+        Qt::Core
+        Qt::Gui
+        Qt::SerialPort
+        Qt::Widgets
         )
