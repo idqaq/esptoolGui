@@ -60,7 +60,7 @@ void layout::reload() {
     }
 }
 void layout::file() {
-    auto file = QFileDialog::getOpenFileName(this,"MCU固件","~","固件 (*.bin);; 所有文件 (*.*);; );");
+    auto file = QFileDialog::getOpenFileName(this,"MCU固件","~","固件 (*.bin);; 所有文件 (*.*);;");
     if (!file.isEmpty()){
         qDebug()<<"固件(单)文件路径"<<file;
         ui->oneBin->setText(file);
